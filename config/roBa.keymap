@@ -50,10 +50,10 @@
 
         default_layer {
             bindings = <
-&kp Q     &kp W      &kp E         &kp R       &kp T                                            &kp Y        &kp U    &kp I      &kp O    &kp P
-&kp A     &kp S      &kp D         &lt 4 F     &kp G        &kp ESC           &kp SINGLE_QUOTE  &kp H        &lt 4 J  &lt 3 K    &lt 5 L  &kp SEMICOLON
-&kp Z     &kp X      &kp C         &kp V       &kp B        &kp TAB           &kp MINUS         &kp N        &kp M    &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCMD  &kp LCTRL  &kp LEFT_ALT  &lt 1 LCMD  &lt 2 SPACE  &lt 3 DELETE      &lt 4 BACKSPACE   &lt 5 ENTER                               &lt 6 ESC
+&kp Q             &kp W      &kp E         &kp R       &kp T                                            &kp Y        &kp U    &kp I      &kp O    &kp P
+&kp A             &kp S      &kp D         &lt 4 F     &kp G        &kp ESC           &kp SINGLE_QUOTE  &kp H        &lt 4 J  &lt 3 K    &lt 5 L  &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V       &kp B        &kp TAB           &kp MINUS         &kp N        &kp M    &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCMD          &kp LCTRL  &kp LEFT_ALT  &lt 1 LCMD  &lt 2 SPACE  &lt 3 DELETE      &lt 4 BACKSPACE   &lt 5 ENTER                               &lt 6 ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -61,19 +61,19 @@
 
         FUNCTION {
             bindings = <
-&kp N1     &kp N2     &kp N3     &kp N4          &kp N5                                     &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
-&kp PLUS   &kp MINUS  &kp ASTRK  &kp SLASH       &kp EQUAL       &kp UNDER      &kp ESCAPE  &trans  &trans    &kp UP    &trans     &trans
-&kp RG(Z)  &kp RG(X)  &kp RG(C)  &kp RG(RS(N4))  &kp RG(RS(N5))  &trans         &kp TAB     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans     &trans     &trans     &trans          &trans          &trans         &trans      &trans                                 &trans
+&kp N1     &kp N2     &kp N3     &kp N4          &kp N5                                  &kp N6           &kp N7        &kp N8    &kp N9     &kp N0
+&kp PLUS   &kp MINUS  &kp ASTRK  &kp SLASH       &kp EQUAL       &trans      &kp ESCAPE  &kp EXCLAMATION  &kp QUESTION  &kp UP    &trans     &trans
+&kp RG(Z)  &kp RG(X)  &kp RG(C)  &kp RG(RS(N4))  &kp RG(RS(N5))  &trans      &kp TAB     &trans           &kp LEFT      &kp DOWN  &kp RIGHT  &trans
+&trans     &trans     &trans     &trans          &trans          &trans      &trans      &trans                                              &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp EXCLAMATION  &kp AT          &kp POUND  &kp DOLLAR            &kp PERCENT                                              &kp CARET         &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SQT          &kp LEFT_BRACE  &kp LBKT   &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp DOUBLE_QUOTES      &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT      &kp RIGHT_BRACE       &kp SQT
-&trans           &trans          &trans     &trans                &trans         &trans                 &trans             &trans            &trans                 &trans        &kp PIPE              &kp BACKSLASH
-&trans           &trans          &trans     &trans                &trans         &trans                 &trans             &trans                                                                       &trans
+&kp EXCLAMATION  &kp AT          &kp POUND  &kp DOLLAR            &kp PERCENT                                   &kp CARET         &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SQT          &kp LEFT_BRACE  &kp LBKT   &kp LEFT_PARENTHESIS  &kp LESS_THAN  &trans      &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT      &kp RIGHT_BRACE       &kp SQT
+&trans           &trans          &trans     &trans                &trans         &trans      &trans             &trans            &trans                 &trans        &kp PIPE              &kp BACKSLASH
+&trans           &trans          &trans     &trans                &trans         &trans      &trans             &trans                                                                       &trans
             >;
         };
 
