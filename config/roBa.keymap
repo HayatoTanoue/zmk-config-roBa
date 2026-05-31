@@ -53,10 +53,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E      &kp R           &kp T                                            &kp Y        &kp U    &kp I      &kp O    &kp P
-&mt LEFT_WIN A    &kp S         &kp D      &lt 4 F         &kp G        &kp ESC           &kp SINGLE_QUOTE  &kp H        &lt 4 J  &lt 3 K    &lt 5 L  &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C      &kp V           &kp B        &kp ESC           &kp MINUS         &kp N        &kp M    &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LEFT_GUI  &kp LCTRL  &lt 1 LEFT_ALT  &lt 2 SPACE  &lt 3 DELETE      &lt 4 BACKSPACE   &lt 5 ENTER                               &lt 6 RIGHT_SHIFT
+&kp Q             &kp W         &kp E         &kp R           &kp T                                            &kp Y        &kp U    &kp I      &kp O    &kp P
+&mt LEFT_WIN A    &kp S         &kp D         &lt 4 F         &kp G        &kp ESC           &kp SINGLE_QUOTE  &kp H        &lt 4 J  &lt 3 K    &lt 5 L  &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B        &kp TAB           &kp MINUS         &kp N        &kp M    &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 LEFT_ALT  &lt 2 SPACE  &lt 3 DELETE      &lt 4 BACKSPACE   &lt 5 ENTER                               &lt 6 RIGHT_SHIFT
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -64,10 +64,10 @@
 
         FUNCTION {
             bindings = <
-&kp N1     &kp N2     &kp N3     &kp N4          &kp N5                                   &kp N6     &kp N7    &kp N8    &kp N9        &kp N0
-&kp PLUS   &kp MINUS  &kp ASTRK  &kp SLASH       &kp EQUAL       &kp UNDER      &kp HOME  &kp ENTER  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp RG(Z)  &kp RG(X)  &kp RG(C)  &kp RG(RS(N4))  &kp RG(RS(N5))  &trans         &trans    &kp F6     &kp F7    &kp F8    &kp F9        &kp F10
-&trans     &trans     &trans     &trans          &trans          &trans         &trans    &trans                                       &kp F11
+&kp N1     &kp N2     &kp N3     &kp N4          &kp N5                                     &kp N6     &kp N7    &kp N8    &kp N9        &kp N0
+&kp PLUS   &kp MINUS  &kp ASTRK  &kp SLASH       &kp EQUAL       &kp UNDER      &kp ESCAPE  &kp ENTER  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp RG(Z)  &kp RG(X)  &kp RG(C)  &kp RG(RS(N4))  &kp RG(RS(N5))  &trans         &kp TAB     &kp F6     &kp F7    &kp F8    &kp F9        &kp F10
+&trans     &trans     &trans     &trans          &trans          &trans         &trans      &trans                                       &kp F11
             >;
         };
 
@@ -82,8 +82,8 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp TAB   &trans    &trans     &trans                      &trans  &trans              &trans            &trans               &trans
-&trans      &trans    &kp UP    &trans     &trans  &trans      &trans  &trans  &mkp LCLK           &trans            &mkp RCLK            &trans
+&kp ESCAPE  &trans    &trans    &trans     &trans                      &trans  &trans              &trans            &trans               &trans
+&kp TAB     &trans    &kp UP    &trans     &trans  &trans      &trans  &trans  &mkp LCLK           &trans            &mkp RCLK            &trans
 &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &trans  &trans  &kp RC(LEFT_ARROW)  &kp RC(UP_ARROW)  &kp RC(RIGHT_ARROW)  &trans
 &trans      &trans    &trans    &trans     &trans  &trans      &trans  &trans                                                             &trans
             >;
